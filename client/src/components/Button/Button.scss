@@ -1,0 +1,23 @@
+@use '../../styles/variables';
+@use '../../styles/mixins';
+
+.btn {
+    padding: 1rem 2rem;
+    display: inline-block;
+    background-color: variables.$color-white;
+    color: variables.$color-black;
+    border: 1px solid transparent;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+        background: transparent;
+        color: variables.$color-white;
+        border-color: variables.$color-white;
+    }
+
+    &--primary {
+        background-color: variables.$color-danger;
+        color: variables.$color-white;
+    }
+}

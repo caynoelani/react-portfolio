@@ -16,23 +16,23 @@ body {
 }
 
 h2 {
-  font-size: var(--font-size-h2-lg);
+  font-size: variables.$font-size-h2-lg;
 }
 
 h3 {
-  font-size: var(--font-size-h3-lg);
+  font-size: variables.$font-size-h3-lg;
 }
 
 h4 {
-  font-size: var(--font-size-h4-lg);
+  font-size: variables.$font-size-h4-lg;
 }
 
 h5 {
-  font-size: var(--font-size-h5-lg);
+  font-size: variables.$font-size-h5-lg;
 }
 
 a {
-  color: var(--color-white);
+  color: variables.$color-white;
 }
 
 img {
