@@ -1,0 +1,16 @@
+@mixin resets {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+@mixin flex--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

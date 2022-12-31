@@ -1,0 +1,70 @@
+@use './variables';
+@use './mixins';
+
+
+//RESETS
+
+* {
+  @include mixins.resets;
+}
+
+body {
+  font-family: variables.$font-family-default;
+  line-height: 1.7;
+  color: variables.$color-white;
+  background: variables.$color-bg;
+}
+
+h2 {
+  font-size: var(--font-size-h2-lg);
+}
+
+h3 {
+  font-size: var(--font-size-h3-lg);
+}
+
+h4 {
+  font-size: var(--font-size-h4-lg);
+}
+
+h5 {
+  font-size: var(--font-size-h5-lg);
+}
+
+a {
+  color: var(--color-white);
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+//APP
+.app{
+  &__container{
+      width: variables.$container-width-lg;
+      margin: 0 auto;
+  }
+
+  &__flex{
+    @include mixins.flex--center
+  }
+
+  &__section {
+    padding: 6rem 0;
+    transition: transform 1s, opacity 1s;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    
+    &--hidden {
+      opacity: 0;
+      transform: translateY(8rem);
+    }
+  }
+}
