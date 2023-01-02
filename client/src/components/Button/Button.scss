@@ -10,14 +10,26 @@
     font-weight: 500;
     cursor: pointer;
 
-    &:hover {
-        background: transparent;
-        color: variables.$color-white;
-        border-color: variables.$color-white;
-    }
-
     &--primary {
         background-color: variables.$color-danger;
         color: variables.$color-white;
+
+        &:hover {
+            background: transparent;
+            color: variables.$color-white;
+            border-color: variables.$color-white;
+        }
+    }
+
+    &--filter {
+        background: variables.$color-bg;
+        color: variables.$color-white;
+        border-color: variables.$color-white;
+        border: 1px solid;
+
+        &:hover {
+            background: variables.$color-primary;
+            border-color: variables.$color-white;
+        }
     }
 }
