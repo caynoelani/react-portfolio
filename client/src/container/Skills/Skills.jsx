@@ -45,9 +45,14 @@ const Skills = () => {
                 category: ['All', 'Languages'],
             },
             { 
-                name: 'Express',
-                src: images.express,
+                name: 'Bootstrap',
+                src: images.bootstrap,
                 category: ['All', 'Frameworks/Libraries'],
+            },
+            { 
+                name: 'SASS/SCSS',
+                src: images.sass,
+                category: ['All', 'Other'],
             },
             { 
                 name: 'React.js',
@@ -65,18 +70,8 @@ const Skills = () => {
                 category: ['All', 'Frameworks/Libraries'],
             },
             { 
-                name: 'Framer-Motion',
-                src: images.framerMotion,
-                category: ['All', 'Frameworks/Libraries'],
-            },
-            { 
-                name: 'Flask',
-                src: images.flask,
-                category: ['All', 'Frameworks/Libraries'],
-            },
-            { 
-                name: 'Bootstrap',
-                src: images.bootstrap,
+                name: 'Express.js',
+                src: images.express,
                 category: ['All', 'Frameworks/Libraries'],
             },
             { 
@@ -85,14 +80,19 @@ const Skills = () => {
                 category: ['All', 'Frameworks/Libraries'],
             },
             { 
-                name: 'SQLAlchemy',
-                src: images.sqlAlchemy,
-                category: ['All', 'Tools'],
+                name: 'MongoDB',
+                src: images.mongo,
+                category: ['All', 'Databases'],
             },
             { 
-                name: 'SASS/SCSS',
-                src: images.sass,
-                category: ['All', 'Tools'],
+                name: 'Material UI',
+                src: images.materialUI,
+                category: ['All', 'Frameworks/Libraries'],
+            },
+            { 
+                name: 'Framer-Motion',
+                src: images.framerMotion,
+                category: ['All', 'Frameworks/Libraries'],
             },
             { 
                 name: 'MySQL',
@@ -100,29 +100,34 @@ const Skills = () => {
                 category: ['All', 'Databases'],
             },
             { 
-                name: 'Git',
-                src: images.git,
-                category: ['All', 'Tools'],
-            },
-            { 
-                name: 'GitHub',
-                src: images.github,
-                category: ['All', 'Tools'],
-            },
-            { 
-                name: 'Restful Api',
-                src: images.api,
-                category: ['All', 'Tools'],
-            },
-            { 
-                name: 'MongoDB',
-                src: images.mongo,
-                category: ['All', 'Databases'],
+                name: 'Flask',
+                src: images.flask,
+                category: ['All', 'Frameworks/Libraries'],
             },
             { 
                 name: 'Django',
                 src: images.django,
                 category: ['All', 'Frameworks/Libraries'],
+            },
+            { 
+                name: 'SQLAlchemy',
+                src: images.sqlAlchemy,
+                category: ['All', 'Other'],
+            },
+            { 
+                name: 'Git',
+                src: images.git,
+                category: ['All', 'Other'],
+            },
+            { 
+                name: 'GitHub',
+                src: images.github,
+                category: ['All', 'Other'],
+            },
+            { 
+                name: 'Restful Api',
+                src: images.api,
+                category: ['All', 'Other'],
             },
             { 
                 name: 'GraphQL',

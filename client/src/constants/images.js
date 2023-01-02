@@ -19,9 +19,9 @@ import graphql from '../assets/images/graphql.png';
 import html from '../assets/images/html.png';
 import javascript from '../assets/images/javascript.png';
 import developer from '../assets/images/man-developing-website-on-desk.svg';
+import materialUI from '../assets/images/mui.png'
 import mongo from '../assets/images/mongo.png';
 import mongoose from '../assets/images/mongoose.png';
-import mu5 from '../assets/images/mu5.png';
 import MySQL from '../assets/images/MySQL.png';
 import node from '../assets/images/node.png';
 import parkayFloor from '../assets/images/parkay-floor.svg';
@@ -65,7 +65,7 @@ export default {
     developer,
     mongo,
     mongoose,
-    mu5,
+    materialUI,
     MySQL,
     node,
     parkayFloor,
