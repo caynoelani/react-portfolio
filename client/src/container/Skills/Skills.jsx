@@ -40,31 +40,34 @@ const Skills = () => {
                     <p>
                     I am proficient in the Python, JavaScript (MERN), and C# stacks. And that's just where it starts!
                     </p>
-                    <Button href='#projects' classes='btn btn--primary' text='See My Skills First Hand!' type='anchor'/>
+                    <Button href='#projects' classes='btn btn--primary' text='See My Skills First Hand!' type='anchor--internal'/>
                 </div>
 
                 <div className='skills__content'>
-                    <div className='tile-filter app__flex'>
-                        {
-                            ['Languages', 'Frameworks/Libraries', 'Databases', 'Other', 'All'].map((item, index) => (
-                                <Button
-                                    key={index}
-                                    onClick={() => handleSkillsFilter(item)}
-                                    text={item}
-                                    classes={`tile-filter__item btn btn--filter ${activeFilter === item ? 'active' : '' }`}
-                                    type='filter'
-                                />
-                            ))
-                        }
+                    <div className='app__flex'>
+                        <div className='tile-filter app__flex'>
+                            {
+                                ['Languages', 'Frameworks/Libraries', 'Databases', 'Other', 'All'].map((item, index) => (
+                                    <Button
+                                        key={index}
+                                        onClick={() => handleSkillsFilter(item)}
+                                        text={item}
+                                        classes={`tile-filter__item btn btn--filter ${activeFilter === item ? 'active' : '' }`}
+                                        type='filter'
+                                    />
+                                ))
+                            }
+                        </div>
                     </div>
+
             
                     <motion.div
                         animate={animateCard}
                         transition={{duration: 0.25, 
                         delayChildren: 0.5}}
-                        className='skills__tiles'
+                        className='skills__tiles app__flex'
                     >
-                        {filterSkills.map((skill, index)=> (
+                        {filterSkills.map((skill, index) => (
                             <motion.div
                                 key={index}
                                 whileInView={{ opacity: [0, 1] }}

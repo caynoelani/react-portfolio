@@ -1,0 +1,40 @@
+@use '../../styles/variables';
+
+.projects {
+    margin-top: 21rem;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .project {
+        background: variables.$color-bg1;
+        text-align: center;
+        border: 1px solid transparent;
+
+        &:hover {
+            background: transparent;
+            border-color: variables.$color-primary;
+        }
+
+        &__img {
+            height: 15rem;
+
+            img {
+                height: inherit;
+                padding: .5rem;
+            }
+        }
+
+        &__description {
+            padding: 2rem;
+
+            p {
+                margin: 1.2rem 0 2rem;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

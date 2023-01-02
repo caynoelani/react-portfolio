@@ -3,11 +3,23 @@ import './Button.scss'
 
 const Button = (props) => {
 
-    if(props.type === 'anchor') 
+    if(props.type === 'anchor--internal') 
         return (
             <a 
                 href={props.href}
                 className={`${props.classes}`}
+            >
+                {props.text}
+            </a>
+        ) 
+
+    else if(props.type === 'anchor--external') 
+        return (
+            <a 
+                href={props.href}
+                className={`${props.classes}`}
+                target="_blank"
+                rel="noopener noreferrer"
             >
                 {props.text}
             </a>

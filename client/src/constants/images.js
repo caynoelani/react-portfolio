@@ -25,6 +25,7 @@ import mongoose from '../assets/images/mongoose.png';
 import MySQL from '../assets/images/MySQL.png';
 import node from '../assets/images/node.png';
 import parkayFloor from '../assets/images/parkay-floor.svg';
+import personalPortfolio from '../assets/images/personalPortfolio.png'
 import programmer from '../assets/images/programmer.png';
 import programmer1 from '../assets/images/programmer1.webp';
 import programmer2 from '../assets/images/programmer2.webp';
@@ -69,6 +70,7 @@ export default {
     MySQL,
     node,
     parkayFloor,
+    personalPortfolio,
     programmer,
     programmer1,
     programmer2,

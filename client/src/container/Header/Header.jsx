@@ -13,11 +13,11 @@ const Header = () => {
                     <p>
                         I build full-stack applications both you and your clients will love!
                     </p>
-                    <Button href="#contact" classes="btn btn--primary" text="Let's Connect!" type='anchor'/>
+                    <Button href="#contact" classes="btn btn--primary" text="Let's Connect!" type='anchor--internal'/>
                 </div>
                     <div className="header__img-container">
                     <div className="header__img-wrapper">
-                        <img className="header__img" src={images.developer} />
+                        <img className="header__img" alt='Software Developer Illustration' src={images.developer} />
                     </div>
                 </div>
             </div>

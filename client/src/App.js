@@ -1,5 +1,5 @@
 import './styles/App.scss';
-import { Header, Skills } from './container'
+import { Header, Skills, Projects } from './container'
 import { Navbar } from './components'
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <Navbar />
       <Header />
       <Skills />
+      <Projects />
     </div>
   );
 }
