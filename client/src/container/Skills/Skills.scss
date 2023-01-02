@@ -1,0 +1,84 @@
+@use '../../styles/variables';
+
+.skills {
+    background-color: variables.$color-bg1;
+    height: 29rem;
+
+    h2 {
+        line-height: 1;
+        margin-bottom: 3rem;
+    }
+
+    &__container {
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    &__description {
+        margin-right: 4rem;
+
+        p {
+            margin: 1rem 0 3rem;
+        }
+    }
+
+
+    &__content {
+        .tile-filter {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+
+            &__item {
+                transition: all 0.3s ease;
+            }
+
+            .active {
+                background: transparent;
+                color: variables.$color-white;
+                border-color: variables.$color-white;
+            }
+        }
+    }
+
+    &__tiles {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 1.2rem;
+
+        .tile {
+            background-color: variables.$color-bg2;
+            padding: 1rem;
+            border-radius: 2rem;
+            transition: variables.$transition;
+            width: 8rem;
+            height: 8rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.3);
+                z-index: 1;
+            }
+
+            img {
+                width: 3rem;
+                height: 3rem;
+            }
+
+            h5 {
+                text-align: center;
+                font-size: .8rem;
+            }
+
+            p {
+                font-size: 0.85rem;
+            }
+        }
+    }
+}

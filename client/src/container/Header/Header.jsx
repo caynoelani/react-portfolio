@@ -2,6 +2,7 @@ import React from 'react'
 import './Header.scss'
 import { images } from '../../constants'
 import { Button } from '../../components'
+import { Wrapper } from '../../hocs'
 
 const Header = () => {
     return (
@@ -12,7 +13,7 @@ const Header = () => {
                     <p>
                         I build full-stack applications both you and your clients will love!
                     </p>
-                    <Button href="#contact" classes="btn btn--primary" text="Let's Connect!"/>
+                    <Button href="#contact" classes="btn btn--primary" text="Let's Connect!" type='anchor'/>
                 </div>
                     <div className="header__img-container">
                     <div className="header__img-wrapper">
