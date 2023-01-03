@@ -12,10 +12,11 @@
     &__container {
         display: grid;
         grid-template-columns: 40% 60%;
+        gap: 2rem;
     }
 
     &__description {
-        margin-right: 4rem;
+        padding-right: 4rem;
 
         p {
             margin: 1rem 0 3rem;

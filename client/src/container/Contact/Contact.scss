@@ -1,0 +1,83 @@
+@use '../../styles/variables';
+
+.contact {
+    &__container {
+        background: variables.$color-bg1;
+        padding: 4rem;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        gap: 4rem;
+        height: 30rem;
+        margin: 7rem auto;
+        border-radius: 1rem;
+    }
+
+    &__aside {
+        background: variables.$color-primary;
+        padding: 3rem;
+        border-radius: 1rem;
+        position: relative;
+        bottom: 10rem;
+
+        h3 {
+          text-align: left;
+          margin-bottom: 1rem;
+        }
+
+        &-image {
+          width: 12rem;
+          margin-bottom: 2rem;
+        }
+    }
+
+    &__details {
+      li {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        align-items: center;
+      }
+    }
+
+    &__socials {
+      display: flex;
+      gap: 0.8rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-right: 4rem;
+
+      input[type="text"] {
+        width: fit-content 50%;
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        background: variables.$color-bg;
+        padding: 1rem;
+        color: variables.$color-white;
+      }
+
+      ::placeholder {
+        color: variables.$color-white;
+        opacity: 0.8;
+        font-family: variables.$font-family-default;
+      }
+
+      .form__name {
+        display: flex;
+        gap: 1.2rem;
+      }
+
+      .btn {
+        width: max-content;
+        margin-top: 1rem;
+      }
+    }
+}

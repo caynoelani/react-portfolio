@@ -13,8 +13,8 @@ const ProjectCard = (props) => {
                     {props.description}
                 </p>
                 <div>
-                    <Button href={props.demoUrl} classes='btn btn--primary' text="Demo" target="_blank" type='anchor--internal'/>
-                    <Button href={props.codeUrl} classes='btn btn--primary' text="Code" target="_blank" type='anchor--external'/>
+                    <Button href={props.demoUrl} classes='btn btn--project' text="Demo" target="_blank" type='anchor--internal'/>
+                    <Button href={props.codeUrl} classes='btn btn--project' text="Code" target="_blank" type='anchor--external'/>
                 </div>
             </div>
         </article>

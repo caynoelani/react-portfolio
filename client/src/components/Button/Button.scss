@@ -16,8 +16,32 @@
 
         &:hover {
             background: transparent;
-            color: variables.$color-white;
             border-color: variables.$color-white;
+        }
+    }
+
+    &--project {
+        background-color: variables.$color-danger;
+        color: variables.$color-white;
+
+        &:hover {
+            background: transparent;
+            border-color: variables.$color-primary;
+        }
+    }
+
+    &--social {
+        background: variables.$color-bg2;
+        padding: .75rem;
+        border-radius: 50%;
+        font-size: 0.9rem;
+        transition: variables.$transition;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background: variables.$color-bg1;
         }
     }
 
