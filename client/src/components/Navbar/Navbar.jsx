@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { HiMenuAlt4, HiX } from 'react-icons/hi'
 import { motion } from 'framer-motion'
 
@@ -7,9 +6,21 @@ import './Navbar.scss'
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
+    const [navColor, setNavColor] = useState(false)
+
+    //Change Nav OnScroll
+    const changeNavColor = () => {
+        if (window.scrollY >= 80){
+            setNavColor(true)
+        } else {
+            setNavColor(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeNavColor)
 
     return (
-        <nav className='navbar'>
+        <nav className={navColor ? 'navbar on-scroll' : 'navbar'}>
             <div className='app__container navbar__container'>
                 <a href="#home">
                     <h1>CaylaBradleyDev</h1>
