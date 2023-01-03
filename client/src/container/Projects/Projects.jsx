@@ -24,11 +24,13 @@ const Projects = () => {
                     >
                         <ProjectCard 
                             key={index}
-                            image={project.image}
                             title={project.title}
-                            description={project.description}
+                            role={project.role}
+                            images={project.images}
+                            summary={project.summary}
                             demoUrl={project.demoUrl}
                             codeUrl={project.codeUrl}
+                            classified={project.classified}
                         />
                     </motion.div>
 

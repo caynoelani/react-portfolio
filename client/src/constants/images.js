@@ -25,13 +25,16 @@ import mongoose from '../assets/images/mongoose.png';
 import MySQL from '../assets/images/MySQL.png';
 import node from '../assets/images/node.png';
 import parkayFloor from '../assets/images/parkay-floor.svg';
-import personalPortfolio from '../assets/images/personalPortfolio.png'
+import personalPortfolio from '../assets/images/personalPortfolio.png';
+import personalPortfolio1 from '../assets/images/personalPortfolio1.png';
+import personalPortfolio2 from '../assets/images/personalPortfolio2.png';
 import programmer from '../assets/images/programmer.png';
 import programmer1 from '../assets/images/programmer1.webp';
 import programmer2 from '../assets/images/programmer2.webp';
 import python from '../assets/images/python.png';
 import react from '../assets/images/react.png';
 import redux from '../assets/images/redux.png';
+import renee1 from '../assets/images/renee1.png';
 import sanity from '../assets/images/sanity.png';
 import sass from '../assets/images/sass.png';
 import softwareDevelopment from '../assets/images/softwareDevelopment.jpeg';
@@ -71,12 +74,15 @@ export default {
     node,
     parkayFloor,
     personalPortfolio,
+    personalPortfolio1,
+    personalPortfolio2,
     programmer,
     programmer1,
     programmer2,
     python,
     react,
     redux,
+    renee1,
     sanity,
     sass,
     softwareDevelopment,
