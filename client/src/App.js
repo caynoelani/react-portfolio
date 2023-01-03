@@ -1,5 +1,5 @@
 import './styles/App.scss';
-import { Header, Skills, Projects, Contact } from './container'
+import { Header, Skills, Projects, Contact, Footer } from './container'
 import { Navbar } from './components'
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }

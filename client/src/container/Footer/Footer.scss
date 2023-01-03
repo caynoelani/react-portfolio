@@ -1,0 +1,52 @@
+@use '../../styles/variables';
+
+.footer {
+    background-color: variables.$color-bg1;
+    padding-top: 5rem;
+    font-size: 0.9rem;
+
+    &__container {
+        display: grid;
+        grid-template-columns: 2fr auto auto;
+        gap: 5rem;
+
+        > div h5 {
+            margin-bottom: 1.2rem;
+        }
+    }
+
+    &__description {
+        width: 45vw;
+
+        p {
+            margin: 0 0 2rem;
+        }
+    }
+
+    ul li {
+        margin-bottom: 0.7rem;
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__contact-details p {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 1rem;
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    &__copyright {
+        text-align: center;
+        margin-top: 4rem;
+        padding-bottom: 1.2rem;
+    }
+}

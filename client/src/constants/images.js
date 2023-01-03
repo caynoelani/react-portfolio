@@ -34,7 +34,9 @@ import programmer2 from '../assets/images/programmer2.webp';
 import python from '../assets/images/python.png';
 import react from '../assets/images/react.png';
 import redux from '../assets/images/redux.png';
+import renee from '../assets/images/renee.png';
 import renee1 from '../assets/images/renee1.png';
+import renee2 from '../assets/images/renee2.png';
 import sanity from '../assets/images/sanity.png';
 import sass from '../assets/images/sass.png';
 import softwareDevelopment from '../assets/images/softwareDevelopment.jpeg';
@@ -82,7 +84,9 @@ export default {
     python,
     react,
     redux,
+    renee,
     renee1,
+    renee2,
     sanity,
     sass,
     softwareDevelopment,
