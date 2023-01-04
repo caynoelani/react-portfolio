@@ -1,0 +1,28 @@
+@use '../../styles/variables';
+
+.more-info-dropdown-container {
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+
+    .more-info-content {
+        overflow: hidden;
+
+        &[data-show-more="false"] {
+            height: 0;
+        }
+
+        &[data-show-more="true"] {
+            height: fit-content;
+            padding: 2rem 4rem;
+
+            ul li {
+                list-style: circle;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .expand-dropdown {
+        cursor: pointer;
+    }
+}

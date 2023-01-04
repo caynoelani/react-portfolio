@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../../components'
+import { Button, MoreInfoDropdown } from '../../components'
 
 const ProjectCard = (props) => {
     return (
@@ -18,6 +18,7 @@ const ProjectCard = (props) => {
                     {!props.classified && <Button href={props.codeUrl} classes='btn btn--project' text="Code" target="_blank" type='anchor--external'/>}
                 </div>
             </div>
+            <MoreInfoDropdown jobDescription={props.jobDescription} technologies={props.technologies}/>
         </article>
     )
 }

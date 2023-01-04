@@ -28,6 +28,8 @@ const Projects = () => {
                             role={project.role}
                             images={project.images}
                             summary={project.summary}
+                            jobDescription={project.jobDescription}
+                            technologies={project.technologies}
                             demoUrl={project.demoUrl}
                             codeUrl={project.codeUrl}
                             classified={project.classified}

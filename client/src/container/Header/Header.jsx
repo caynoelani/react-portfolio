@@ -11,7 +11,7 @@ const Header = () => {
                 <div className="header__description">
                     <h2>Software Engineer</h2>
                     <p>
-                        I build full-stack applications both you and your clients will love!
+                        I'm a highly motivated developer with a passion for creating dynamic and innovative full-stack applications that balance scalability, performance, and the user experience. Hire me to build applications both you and your clients will love!
                     </p>
                     <Button href="#contact" classes="btn btn--primary" text="Let's Connect!" type='anchor--internal'/>
                 </div>

@@ -7,12 +7,15 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
+        align-items: center;
+        justify-items: center;
     }
 
     .project {
         background: variables.$color-bg1;
         text-align: center;
         border: 1px solid transparent;
+        width: 26rem;
 
         &:hover {
             background: transparent;
@@ -37,6 +40,5 @@
             margin: 1.2rem 0 2rem;
             font-size: 0.9rem;
         }
-
     }
 }

@@ -8,7 +8,7 @@ const Navbar = () => {
     const [toggle, setToggle] = useState(false)
     const [navColor, setNavColor] = useState(false)
 
-    //Change Nav OnScroll
+    //Change Nav Colorcd clien OnScroll
     const changeNavColor = () => {
         if (window.scrollY >= 80){
             setNavColor(true)
