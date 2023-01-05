@@ -17,6 +17,7 @@ import github from '../assets/images/github.png';
 import go from '../assets/images/go.png';
 import graphql from '../assets/images/graphql.png';
 import html from '../assets/images/html.png';
+import irisFinancial from '../assets/images/iris-financial.png';
 import javascript from '../assets/images/javascript.png';
 import developer from '../assets/images/man-developing-website-on-desk.svg';
 import materialUI from '../assets/images/mui.png'
@@ -67,6 +68,7 @@ export default {
     go,
     graphql,
     html,
+    irisFinancial,
     javascript,
     developer,
     mongo,
