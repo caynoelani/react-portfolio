@@ -1,0 +1,39 @@
+@use '../../styles/variables';
+
+.carousel {
+    overflow: hidden;
+
+    &__slides {
+        display: flex;
+        height: inherit;
+        position: relative;
+
+        .left-arrow, .right-arrow {
+            height: 2rem;
+            width: 2rem;
+            position: absolute;
+            top: calc(50% - 1.5rem);
+            z-index: 99;
+            cursor: pointer;
+            color: variables.$color-primary;
+            user-select: none;
+        }
+
+        .left-arrow {
+            left: .25rem;
+        }
+
+        .right-arrow {
+            right: .25rem;
+        }
+
+        .slide {
+            height: inherit;
+
+            img {
+                height: inherit;
+                object-fit: fill;
+            }
+        }
+    }
+}

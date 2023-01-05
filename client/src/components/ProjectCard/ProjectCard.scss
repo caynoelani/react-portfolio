@@ -1,0 +1,28 @@
+@use '../../styles/variables';
+
+.project {
+    background: variables.$color-bg1;
+    text-align: center;
+    border: 1px solid transparent;
+    width: 26rem;
+    padding: .5rem;
+    padding-bottom: 2rem;
+
+    &:hover {
+        background: transparent;
+        border-color: variables.$color-primary;
+    }
+
+    &__img {
+        height: 15rem;
+    }
+
+    &__description {
+        padding: 2rem 2rem 0;
+    }
+
+    &__summary {
+        margin: 1.2rem 0 2rem;
+        font-size: 0.9rem;
+    }
+}

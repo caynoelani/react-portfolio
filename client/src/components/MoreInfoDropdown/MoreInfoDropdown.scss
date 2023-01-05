@@ -16,7 +16,6 @@
             padding: 2rem 4rem;
 
             ul li {
-                list-style: circle;
                 margin-bottom: 1rem;
             }
         }
@@ -24,5 +23,15 @@
 
     .expand-dropdown {
         cursor: pointer;
+
+        .expand-dropdown__text {
+            text-decoration: underline;
+            
+            &:hover {
+                color: variables.$color-primary;
+                text-decoration-color: variables.$color-primary;
+            }
+        }
+        
     }
 }

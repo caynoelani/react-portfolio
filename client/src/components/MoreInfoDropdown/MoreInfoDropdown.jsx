@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 
-import { MdOutlineArrowDropDownCircle } from 'react-icons/md'
 import './MoreInfoDropdown.scss'
 
 const MoreInfoDropdown = (props) => {
@@ -18,7 +17,7 @@ const MoreInfoDropdown = (props) => {
                 <ul>
                     <strong>Contributions:</strong><br/>
                     {props.jobDescription.map((bulletPoint, index)=> (
-                        <li key={index}>{bulletPoint}</li>
+                        <li key={index}>- {bulletPoint}</li>
                     ))}
                 </ul>
                 <p><strong>Technologies Used:</strong><br/>{props.technologies.map((technology, index) => (
@@ -27,14 +26,7 @@ const MoreInfoDropdown = (props) => {
             </motion.div>
             <div className='expand-dropdown' onClick={() => setShowMore(!showMore)}>
                 <span className='expand-dropdown__text app__flex'>
-                    {
-                        showMore ?
-                        'Hide Info':
-                        <>
-                            More Info
-                            <MdOutlineArrowDropDownCircle />
-                        </>
-                    }
+                    { showMore ? 'Hide Info': `More Info` }
                 </span>
             </div> 
         </div>
