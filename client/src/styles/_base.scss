@@ -1,0 +1,47 @@
+@use './variables';
+@use './font-size.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    overflow: hidden; ///////////////////////
+}
+
+body {
+    font-family: variables.$font-family-default;
+    line-height: 1.7;
+    color: variables.$color-white;
+    background: variables.$color-bg;
+}
+
+// h2 {
+//     font-size: variables.$font-size-h2-lg;
+// }
+
+// h3 {
+//     font-size: variables.$font-size-h3-lg;
+// }
+
+// h4 {
+//     font-size: variables.$font-size-h4-lg;
+// }
+
+// h5 {
+//     font-size: variables.$font-size-h5-lg;
+// }
+
+a {
+    color: variables.$color-white;
+}
+
+img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}

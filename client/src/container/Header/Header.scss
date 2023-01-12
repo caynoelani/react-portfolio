@@ -1,29 +1,67 @@
+@use '../../styles/breakpoints.scss';
+
 .header {
     position: relative;
     top: 5rem;
-    overflow: hidden;
-    height: calc(100vh - 5rem);
-    margin-bottom: 5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 9rem;
 
-    @media screen and (max-width: 1244px) {
-        height: 52vh;
+    &__description {
         margin-bottom: 4rem;
-    }
 
-    &__container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        gap: 5rem;
-        height: 100%;
+        h2 {
+            margin-bottom: 2rem;
+        }
 
-        @media screen and (max-width: 1244px) {
-            gap: 0;
-            padding-bottom: 3rem;
+        p {
+            margin-bottom: 2rem;
         }
     }
 
-    &__description p {
-        margin: 1rem 0 2.4rem;
+    @include breakpoints.md {
+        &__description {
+            margin-bottom: 2rem;
+    
+            h2 {
+                margin-bottom: 1rem;
+            }
+    
+            p {
+                margin-bottom: 1rem;
+            }
+        }
     }
+
+    @include breakpoints.lg {
+        overflow: hidden;
+        height: calc(100vh - 5rem);
+        margin-bottom: 5rem;
+
+        &__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 5rem;
+            height: 100%;
+            text-align: left;
+        }
+    
+        &__description p {
+            margin: 1rem 0 2.4rem;
+        }
+    }
+
+        
+    // @include breakpoints.xl {
+    //     height: 52vh;
+    //     margin-bottom: 4rem;
+
+    //     &__container {
+    //         gap: 0;
+    //         padding-bottom: 3rem;
+    //     }
+    // }
 }
