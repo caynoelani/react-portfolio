@@ -34,10 +34,8 @@ const Navbar = () => {
                 </ul>
                 <div className='navbar__menu--mobile'>
                     {
-                        !toggle && <HiMenuAlt4 onClick={() => setToggle(true)}/>
-                    }
-                    {
-                        toggle && (
+                        !toggle ? 
+                        <HiMenuAlt4 onClick={() => setToggle(true)}/> :
                         <motion.div
                             whileInView= {{ x: [300, 0] }}
                             transition={{ duration: 0.85, ease: 'easeOut'}}
@@ -51,7 +49,7 @@ const Navbar = () => {
                             ))}
                             </ul>
                         </motion.div>
-                    )}
+                    }
                 </div>
             </div>
         </nav>

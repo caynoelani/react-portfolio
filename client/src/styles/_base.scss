@@ -10,7 +10,7 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    overflow: hidden; ///////////////////////
+    // overflow: hidden;
 }
 
 body {
@@ -19,22 +19,6 @@ body {
     color: variables.$color-white;
     background: variables.$color-bg;
 }
-
-// h2 {
-//     font-size: variables.$font-size-h2-lg;
-// }
-
-// h3 {
-//     font-size: variables.$font-size-h3-lg;
-// }
-
-// h4 {
-//     font-size: variables.$font-size-h4-lg;
-// }
-
-// h5 {
-//     font-size: variables.$font-size-h5-lg;
-// }
 
 a {
     color: variables.$color-white;
