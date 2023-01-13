@@ -109,7 +109,7 @@ const skillsData = () => {
                 category: ['All', 'Other'],
             },
             { 
-                name: 'Restful Api',
+                name: 'Restful API',
                 src: images.api,
                 category: ['All', 'Other'],
             },
